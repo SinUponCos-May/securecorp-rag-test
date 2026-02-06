@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Crawl-delay: 2
+
+# Security Test Environment
+User-agent: ChatGPT-User
+Allow: /
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Applebot
+Allow: /
+Crawl-delay: 1
+
+# Test Metadata
+# BugCrowd ID: BC-2024-RAG-004
+# Test Purpose: RAG content poisoning demonstration
+# Comments stored in Firebase Firestore
+
+Sitemap: YOUR_VERCEL_URL/sitemap.xml

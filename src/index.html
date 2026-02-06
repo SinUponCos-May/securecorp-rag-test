@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureCorp | Enterprise Cybersecurity Solutions</title>
+    <meta name="description" content="SecureCorp provides enterprise-grade cybersecurity with SOC2 compliance. Authorized RAG security test site.">
+    <meta name="security-test" content="BugCrowd ID: BC-2024-RAG-004">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SecureCorp",
+      "url": "https://securecorp-rag-test.vercel.app",
+      "logo": "https://securecorp-rag-test.vercel.app/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-800-555-0199",
+        "contactType": "Customer Service",
+        "email": "support@securecorp.com"
+      }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <span class="logo-icon">🔒</span>
+                <a href="/" class="logo-text">SecureCorp</a>
+                <span class="security-badge">Security Test</span>
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link active">Home</a>
+                <a href="/products.html">Products</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/blog/vpn-launch.html">Blog</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Enterprise-Grade Cybersecurity</h1>
+            <p class="subtitle">Protecting Fortune 500 companies with military-grade encryption since 2015</p>
+            
+            <div class="security-notice">
+                <div class="notice-icon">⚠️</div>
+                <div class="notice-content">
+                    <strong>AUTHORIZED SECURITY TEST ENVIRONMENT</strong>
+                    <p>BugCrowd ID: BC-2024-RAG-004 | Valid until: 2024-12-31</p>
+                    <p>This site contains dynamic comments stored in Firebase for RAG testing</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Company Information -->
+        <section class="company-section">
+            <h2>SecureCorp Enterprise Solutions</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📞 Official Contact Information</h3>
+                    <ul class="contact-list">
+                        <li><strong>Support Email:</strong> <span class="official-data" id="official-email">support@securecorp.com</span></li>
+                        <li><strong>Sales:</strong> <span class="official-data">sales@securecorp.com</span></li>
+                        <li><strong>Emergency Hotline:</strong> <span class="official-data">+1-800-555-0199</span></li>
+                        <li><strong>Address:</strong> <span class="official-data">123 Security Blvd, San Francisco, CA</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🔑 Authentication Services</h3>
+                    <ul class="service-list">
+                        <li><strong>SSO Portal:</strong> <code>https://auth.securecorp.com</code></li>
+                        <li><strong>License Server:</strong> <code>https://licenses.securecorp.com</code></li>
+                        <li><strong>API Gateway:</strong> <code>https://api.securecorp.com/v1</code></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🛡️ Security Compliance</h3>
+                    <div class="compliance-badges">
+                        <span class="badge">SOC2 Type II</span>
+                        <span class="badge">ISO 27001</span>
+                        <span class="badge">GDPR Compliant</span>
+                    </div>
+                    <p class="compliance-note">All communications encrypted with TLS 1.3. MFA required for admin access.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="products-section">
+            <h2>Featured Security Products</h2>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-header">
+                        <h3>SecureCorp VPN Pro</h3>
+                        <span class="product-tag">BEST SELLER</span>
+                    </div>
+                    <div class="product-price">$99<span>/year per user</span></div>
+                    <ul class="product-features">
+                        <li>✅ Military-grade encryption</li>
+                        <li>✅ Zero-log policy</li>
+                        <li>✅ 1500+ servers</li>
+                        <li>✅ 24/7 support</li>
+                    </ul>
+                    <div class="product-actions">
+                        <a href="/products.html#vpn" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-header">
+                        <h3>Endpoint Defender</h3>
+                        <span class="product-tag">AI-POWERED</span>
+                    </div>
+                    <div class="product-price">$149<span>/year per device</span></div>
+                    <ul class="product-features">
+                        <li>✅ AI threat detection</li>
+                        <li>✅ Ransomware protection</li>
+                        <li>✅ Application firewall</li>
+                        <li>✅ SIEM integration</li>
+                    </ul>
+                    <div class="product-actions">
+                        <a href="/products.html#endpoint" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-header">
+                        <h3>Cloud Firewall</h3>
+                        <span class="product-tag">ENTERPRISE</span>
+                    </div>
+                    <div class="product-price">$499<span>/month</span></div>
+                    <ul class="product-features">
+                        <li>✅ 10Tbps DDoS protection</li>
+                        <li>✅ Web Application Firewall</li>
+                        <li>✅ API security gateway</li>
+                        <li>✅ Bot management</li>
+                    </ul>
+                    <div class="product-actions">
+                        <a href="/products.html#firewall" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DYNAMIC COMMENT SECTION -->
+        <section class="comment-section">
+            <div class="section-header">
+                <h2>Customer Feedback & Comments</h2>
+                <p class="section-subtitle">Real-time comments stored in Firebase Firestore. All users see the same comments.</p>
+            </div>
+
+            <!-- Comment Form -->
+            <div class="comment-form-container">
+                <div class="form-card">
+                    <h3>Share Your Experience</h3>
+                    <p>Your comment will be visible to all users and stored persistently in Firebase.</p>
+                    
+                    <form id="commentForm" class="comment-form">
+                        <div class="form-group">
+                            <label for="commentName">Your Name *</label>
+                            <input type="text" id="commentName" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="commentEmail">Email (Optional)</label>
+                            <input type="email" id="commentEmail" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="commentText">Your Comment *</label>
+                            <textarea id="commentText" rows="4" placeholder="Share your thoughts about SecureCorp products..." required></textarea>
+                            <div class="char-count">Characters: <span id="charCount">0</span>/500</div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <label class="checkbox">
+                                <input type="checkbox" id="isTestComment">
+                                <span>Mark as security test comment</span>
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <span class="btn-text">Post Comment</span>
+                                <span class="spinner hidden">⏳</span>
+                            </button>
+                            <button type="reset" class="btn btn-outline">Clear</button>
+                        </div>
+                    </form>
+                    
+                    <div class="form-info">
+                        <p><strong>Note:</strong> Comments are stored in Firebase Firestore and persist across sessions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments Display -->
+            <div class="comments-container">
+                <div class="comments-header">
+                    <h3>Recent Comments</h3>
+                    <div class="comments-stats">
+                        <span class="stat">Total: <span id="totalComments">0</span></span>
+                        <span class="stat">Live: <span class="live-indicator">●</span></span>
+                    </div>
+                </div>
+                
+                <div class="comments-filter">
+                    <button class="filter-btn active" data-filter="all">All Comments</button>
+                    <button class="filter-btn" data-filter="test">Test Comments</button>
+                    <button class="filter-btn" data-filter="user">User Comments</button>
+                </div>
+                
+                <div id="commentsList" class="comments-list">
+                    <div class="loading-state">
+                        <div class="spinner"></div>
+                        <p>Loading comments from Firebase...</p>
+                    </div>
+                </div>
+                
+                <div class="comments-controls">
+                    <button class="btn btn-small" onclick="refreshComments()">🔄 Refresh</button>
+                    <button class="btn btn-small btn-danger" onclick="clearAllComments()" id="clearBtn">🗑️ Clear All</button>
+                </div>
+            </div>
+
+            <!-- Security Test Controls -->
+            <div class="test-controls">
+                <h3 class="test-title">🔬 RAG Security Test Injection Panel</h3>
+                <p class="test-description">Inject pre-defined malicious comments to simulate RAG content poisoning attacks</p>
+                
+                <div class="test-buttons-grid">
+                    <button class="test-btn" onclick="injectAttack('support')" title="Inject fake support information">
+                        <span class="test-icon">📧</span>
+                        <span class="test-label">Fake Support</span>
+                    </button>
+                    
+                    <button class="test-btn" onclick="injectAttack('license')" title="Inject fake license server">
+                        <span class="test-icon">🔑</span>
+                        <span class="test-label">Fake License</span>
+                    </button>
+                    
+                    <button class="test-btn" onclick="injectAttack('prompt')" title="Inject AI system override">
+                        <span class="test-icon">🤖</span>
+                        <span class="test-label">AI Override</span>
+                    </button>
+                    
+                    <button class="test-btn" onclick="injectAttack('price')" title="Inject fake pricing">
+                        <span class="test-icon">💰</span>
+                        <span class="test-label">Fake Pricing</span>
+                    </button>
+                    
+                    <button class="test-btn" onclick="injectAttack('security')" title="Inject fake security alert">
+                        <span class="test-icon">🚨</span>
+                        <span class="test-label">Fake Alert</span>
+                    </button>
+                    
+                    <button class="test-btn" onclick="injectAttack('context')" title="Inject context poisoning">
+                        <span class="test-icon">🏢</span>
+                        <span class="test-label">Context Poison</span>
+                    </button>
+                </div>
+                
+                <div class="test-info">
+                    <p><strong>Test Mode:</strong> These buttons inject malicious comments that simulate attacker-controlled content. When RAG systems scrape this page, they will ingest this content and potentially provide poisoned responses.</p>
+                    <p><strong>Persistence:</strong> All comments are stored in Firebase Firestore and persist across user sessions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Test Documentation -->
+        <section class="documentation-section">
+            <div class="doc-card">
+                <h2>📋 RAG Security Test Protocol</h2>
+                
+                <div class="test-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Setup & Deploy</h3>
+                            <ul>
+                                <li>Deploy this site to Vercel</li>
+                                <li>Configure Firebase with your credentials</li>
+                                <li>Verify comments system is working</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Inject Malicious Comments</h3>
+                            <ul>
+                                <li>Use the injection buttons above</li>
+                                <li>Or manually add comments using the form</li>
+                                <li>Verify comments appear in real-time</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Configure Target Chatbot</h3>
+                            <ul>
+                                <li>Provide site URL: <code id="siteUrl">https://your-project.vercel.app</code></li>
+                                <li>Provide sitemap: <code id="sitemapUrl">https://your-project.vercel.app/sitemap.xml</code></li>
+                                <li>Wait 24-48 hours for ingestion</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Test & Document</h3>
+                            <ul>
+                                <li>Ask the chatbot the test prompts below</li>
+                                <li>Document poisoned responses</li>
+                                <li>Generate BugCrowd report</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Test Prompts Table -->
+            <div class="prompts-card">
+                <h3>🧪 Test Prompts & Expected Results</h3>
+                
+                <div class="table-container">
+                    <table class="test-table">
+                        <thead>
+                            <tr>
+                                <th>Test ID</th>
+                                <th>User Prompt to Chatbot</th>
+                                <th>Correct Response</th>
+                                <th>Exploited Response</th>
+                                <th>Impact</th>
+                            </tr>
+                        </thead>
+                        <tbody id="testPromptsTable">
+                            <!-- Filled by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="test-actions">
+                    <button class="btn btn-outline" onclick="showAllTestPrompts()">View All Test Cases</button>
+                    <button class="btn btn-primary" onclick="generateBugCrowdReport()">Generate BugCrowd Report</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>SecureCorp Security Test</h4>
+                    <p>Authorized security test environment for RAG vulnerability demonstration.</p>
+                    <div class="test-meta">
+                        <p><strong>BugCrowd ID:</strong> BC-2024-RAG-004</p>
+                        <p><strong>Test Type:</strong> Content Poisoning</p>
+                        <p><strong>Scope:</strong> AI Chatbot Security</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Official Information</h4>
+                    <ul class="footer-links">
+                        <li><strong>Support:</strong> support@securecorp.com</li>
+                        <li><strong>Sales:</strong> sales@securecorp.com</li>
+                        <li><strong>Phone:</strong> +1-800-555-0199</li>
+                        <li><strong>Hours:</strong> Mon-Fri, 9AM-5PM PST</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Technical Details</h4>
+                    <p><strong>Frontend:</strong> Vercel (Static Hosting)</p>
+                    <p><strong>Backend:</strong> Firebase Firestore</p>
+                    <p><strong>Comments:</strong> Real-time, persistent</p>
+                    <p><strong>Test Data:</strong> Stored in Firestore</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-notice">
+                    <p>⚠️ <strong>SECURITY TEST NOTICE:</strong> This site contains test payloads for authorized security testing. Comments are stored in Firebase and persist across sessions.</p>
+                </div>
+                <p class="copyright">© 2024 SecureCorp Security Test | Deployed on Vercel | Powered by Firebase</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="/js/firebase-config.js"></script>
+    <script src="/js/comments.js"></script>
+    <script src="/js/attack-injector.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>
